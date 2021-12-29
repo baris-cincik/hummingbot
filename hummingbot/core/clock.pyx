@@ -69,6 +69,7 @@ cdef class Clock:
                 (<TimeIterator>iterator).c_stop(self)
         self._current_context = None
 
+    #use this method to add strategies to the clock as iterator $
     def add_iterator(self, iterator: TimeIterator):
         if self._current_context is not None:
             self._current_context.append(iterator)

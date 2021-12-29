@@ -73,7 +73,6 @@ bitmart_memo: null
 crypto_com_api_key: null
 crypto_com_secret_key: null
 
-
 hitbtc_api_key: null
 hitbtc_secret_key: null
 
@@ -145,7 +144,7 @@ kill_switch_rate: null
 autofill_import: null
 
 # Paper Trading
-paper_trade_exchanges: 
+paper_trade_exchanges:
   - binance
   - kucoin
   - ascend_ex
@@ -171,7 +170,7 @@ send_error_logs: null
 # Advanced configs: Do NOT touch unless you understand what you are changing
 instance_id: null
 log_level: INFO
-debug_console: false
+debug_console: true
 strategy_report_interval: 900.0
 logger_override_whitelist:
   - hummingbot.strategy.arbitrage
@@ -217,17 +216,15 @@ heartbeat_interval_min:
 # a list of binance markets (for trades/pnl reporting) separated by ',' e.g. RLC-USDT,RLC-BTC
 binance_markets:
 
-
-
 # Command Shortcuts
 # Define abbreviations for often used commands
 # or batch grouped commands together
 #
 command_shortcuts:
-- command: spreads
-  help: Set bid and ask spread
-  arguments: ['Bid Spread', 'Ask Spread']
-  output: ['config bid_spread $1', 'config ask_spread $2']
+  - command: spreads
+    help: Set bid and ask spread
+    arguments: ['Bid Spread', 'Ask Spread']
+    output: ['config bid_spread $1', 'config ask_spread $2']
 
 # A source for rate oracle, currently binance or coingecko
 rate_oracle_source:
@@ -250,37 +247,37 @@ create_command_timeout: 10
 other_commands_timeout: 30
 
 # Background color of the top pane
-top-pane: "#000000"
+top-pane: '#000000'
 
 # Background color of the bottom pane
-bottom-pane: "#000000"
+bottom-pane: '#000000'
 
 # Background color of the output pane
-output-pane: "#262626"
+output-pane: '#262626'
 
 # Background color of the input pane
-input-pane: "#1C1C1C"
+input-pane: '#1C1C1C'
 
 # Background color of the logs pane
-logs-pane: "#121212"
+logs-pane: '#121212'
 
 # Terminal primary color
-terminal-primary: "#5FFFD7"
+terminal-primary: '#5FFFD7'
 
 # Primary label color
-primary-label: "#5FFFD7"
+primary-label: '#5FFFD7'
 
 # Secondary label color
-secondary-label: "#FFFFFF"
+secondary-label: '#FFFFFF'
 
 # Success label color
-success-label: "#5FFFD7"
+success-label: '#5FFFD7'
 
 # Warning label color
-warning-label: "#FFFF00"
+warning-label: '#FFFF00'
 
 # Info label color
-info-label: "#5FD7FF"
+info-label: '#5FD7FF'
 
 # Error label color
-error-label: "#FF0000"
+error-label: '#FF0000'
